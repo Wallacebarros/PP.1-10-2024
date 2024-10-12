@@ -15,9 +15,12 @@ btn.addEventListener('click', () => {
         return response.json()
     })
     .then(date => {
-        nameP.textContent = date.name
-        img.src = date.sprites.other['official-artwork'].front_default
-        weight.textContent = date.weight + " kg"        
+        const nameP = date.name
+        const img = date.sprites.other['official-artwork'].front_default
+        const type =  date.types[0].type.name
+        const ability = date.abilities[0].ability.name
+        const weight = date.weight
+        const height = date.height
     })
     .catch(err => {
         nameP.textContent = "pokemon não encontrado"
