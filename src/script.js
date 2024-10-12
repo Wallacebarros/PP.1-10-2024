@@ -16,11 +16,14 @@ btn.addEventListener('click', () => {
     })
     .then(date => {
         nameP.textContent = date.name
-        img.src = date.sprites.front_shiny
-        weight.textContent = date.weight + " kg"
+        img.src = date.sprites.other['official-artwork'].front_default
+        weight.textContent = date.weight + " kg"        
     })
     .catch(err => {
         nameP.textContent = "pokemon não encontrado"
-        img.src = "./pokebola-vazia"
+        img.src = "./pokebola-vazia.jpg"
+        weight.textContent = " "
+
+        console.log(err)
     })
 })
