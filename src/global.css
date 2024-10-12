@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --color-black-200: #292929;
+    --color-black-400: #404040;
+    --color-red-100: #A41B1B;
+    --color-white: #fff;
+
+    --font-primary: "Open Sans", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vw;
+    overflow: hidden;
+}
