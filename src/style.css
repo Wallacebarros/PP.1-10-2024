@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    text-align: center;
+}
+
+.search-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    button {
+        border: none;
+        padding: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: aliceblue;
+        }
+    }
+}
+
+img {
+    height: 150px;
+}
