@@ -22,5 +22,6 @@ btn.addEventListener('click', () => {
     .catch(err => {
         nameP.textContent = "pokemon não encontrado"
         img.src = "./pokebola-vazia"
+        weight.textContent = ""
     })
 })
